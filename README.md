@@ -23,7 +23,7 @@ Results may be in the format 'AC_ passed so far' or 'AC_ failed'. These refer to
 
 For cases that fail within expectation, the query that caused the failure will be printed, followed by a short explanation.  
 
-However, if the query produces an error (like error 403), the program will print the query and exit.
+If an unexpected error occurs, an exception may be thrown and the program may terminate. You may type query into IDE to find the query that caused the error.
 ## Assumptions & Interpretations
 * 'Alphabetical order' for sorting names is interpreted as ASCII order. Lower-case letters are treated as equivalent to upper-case letters (using the ASCII values of the upper-case letters).
 * It is assumed that no one is named -.
@@ -36,18 +36,14 @@ However, if the query produces an error (like error 403), the program will print
 * The code locates the web elements by XPath. It is assumed that the XPaths will not change.
 * The default page (before search is performed) is assumed to always show the message 'No items available'.
 * It is assumed that pages will not take more than 20 seconds to load. (The maximum waiting time for a page can be adjusted in constants.py if pages take more than 20 seconds to load on your machine.)
-* The program only works if the service is available (no error 503), the server is not under maintenance, and it is allowed to log in (for there is a limit to the number of concurrent logins).
+* The program only works if the service is available (no error 503), the server is not under maintenance, and it is allowed to log in (for there is a limit to the number of concurrent logins). The program is not made to test for these errors.
 ## Findings
 * The message in the assessment document for AC5 is 'Please provide at least one input to start searching.', with a full-stop, but the message on the website is 'Please provide at least one input to start searching', without a full-stop. I assumed this was intentional and updated the code to reflect not having a full-stop.
-* The following query causes an access denied error: `8+E#U@
-* The page fails the AC 2 criteria that it should be sorted in alphabetical order. The entry ['Trim Client profile', 'S5610485B', '98578197', '-'] appears before entries starting with the letter 'A' with the following queries:
-  * c
-  * i
-  * R
-  * 1
-  * 8
-  * 57
-  * 98
+* The following queries cause an access denied error when searching from a refreshed page (when the table shows 'No items available'):
+  * `8+E#U@
+  * `-6@q
+  * `8@-
+* The page fails the AC 2 criteria that it should be sorted in alphabetical order. The entry ['Trim Client profile', 'S5610485B', '98578197', '-'] appears before entries starting with the letter 'A'. This can be found by searching for smalle substrings of its name or number.
 * Not a bug but the entry ['Test Sanitisating !"#$%&'()*+,-./:;@^P', 'S5443476F', '-', '-'] was found with the following query: "
 * The rest of the acceptance criteria outlined in the document passed 
 ## Future Improvements
