@@ -31,7 +31,7 @@ If an unexpected error occurs, an exception may be thrown and the program may te
 * Partial searches are interpreted to be case-insensitive searches where the query is a continuous substring of the result.
 * NRICs need not follow the checksum used in Singapore (many entries did not), and phone numbers may not be from Singapore (so there isn't a fixed format). However, phone numbers are strictly numerical.
 * The local part of email addresses only contain numbers, upper- or lower-case letters, and any of the following characters !#$%&'*+-/=?^_`{|}~. Dots cannot appear consecutively.
-* The domain of an email can only contain numbers, upper- or lower-letters, hyphens, and dots. Dots cannot appear consecutively.
+* The domain of an email can only contain numbers, upper- or lower-case letters, hyphens, and dots. Dots cannot appear consecutively.
 * The search bar automatically removes non-printable characters, and lone spaces. It is assumed that this is a feature, not a bug.
 * The code locates the web elements by XPath. It is assumed that the XPaths will not change.
 * The default page (before search is performed) is assumed to always show the message 'No items available'.
