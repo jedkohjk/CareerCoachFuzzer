@@ -38,7 +38,7 @@ If an unexpected error occurs, an exception may be thrown and the program may te
 * It is assumed that pages will not take more than 20 seconds to load. (The maximum waiting time for a page can be adjusted in constants.py if pages take more than 20 seconds to load on your machine.)
 * The program only works if the service is available (no error 503), the server is not under maintenance, and it is allowed to log in (for there is a limit to the number of concurrent logins). The program is not made to test for these errors.
 ## Findings
-* The message in the assessment document for AC5 is 'Please provide at least one input to start searching.', with a full-stop, but the message on the website is 'Please provide at least one input to start searching', without a full-stop. I assumed this was intentional and updated the code to reflect not having a full-stop.
+* The message in the assessment document for AC 5 is 'Please provide at least one input to start searching.', with a full-stop, but the message on the website is 'Please provide at least one input to start searching', without a full-stop. I assumed this was intentional and updated the code to reflect not having a full-stop.
 * The following queries cause an access denied error when searching from a refreshed page (when the table shows 'No items available'):
   * `8+E#U@
   * `-6@q
