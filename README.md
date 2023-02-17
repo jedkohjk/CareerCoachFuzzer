@@ -1,5 +1,5 @@
 # Career Coach Fuzzer
-A fuzzer for search queries on the Career Coash site.  
+A fuzzer for search queries on the Career Coach site.  
 This was tested on a Windows laptop.
 ## Pre-requisites
 * Have Google Chrome installed
