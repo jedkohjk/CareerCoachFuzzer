@@ -27,7 +27,7 @@ If an unexpected error occurs, an exception may be thrown and the program may te
 ## Assumptions & Interpretations
 * 'Alphabetical order' for sorting names is interpreted as ASCII order. Lower-case letters are treated as equivalent to upper-case letters (using the ASCII values of the upper-case letters).
 * It is assumed that no one is named -.
-* Exact searches are assumed to be case insensitive.
+* Exact searches are assumed to be case sensitive.
 * Partial searches are interpreted to be case-insensitive searches where the query is a continuous substring of the result.
 * NRICs need not follow the checksum used in Singapore (many entries did not), and phone numbers may not be from Singapore (so there isn't a fixed format). However, phone numbers are strictly numerical.
 * The local part of email addresses only contain numbers, upper- or lower-case letters, and any of the following characters !#$%&'*+-/=?^_`{|}~. Dots cannot appear consecutively.
