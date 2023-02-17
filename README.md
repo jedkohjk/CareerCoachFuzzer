@@ -43,7 +43,7 @@ If an unexpected error occurs, an exception may be thrown and the program may te
   * `8+E#U@
   * `-6@q
   * `8@-
-* The page fails the AC 2 criteria that it should be sorted in alphabetical order. The entry ['Trim Client profile', 'S5610485B', '98578197', '-'] appears before entries starting with the letter 'A'. This can be found by searching for smalle substrings of its name or number.
+* The page fails the AC 2 criteria that it should be sorted in alphabetical order. The entry ['Trim Client profile', 'S5610485B', '98578197', '-'] appears before entries starting with the letter 'A'. This can be found by searching for small substrings of its name or number.
 * Not a bug but the entry ['Test Sanitisating !"#$%&'()*+,-./:;@^P', 'S5443476F', '-', '-'] was found with the following query: "
 * The rest of the acceptance criteria outlined in the document passed 
 ## Future Improvements
