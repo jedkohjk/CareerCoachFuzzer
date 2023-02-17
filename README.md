@@ -23,7 +23,7 @@ Results may be in the format 'AC_ passed so far' or 'AC_ failed'. These refer to
 
 For cases that fail within expectation, the query that caused the failure will be printed, followed by a short explanation.  
 
-If an unexpected error occurs, an exception may be thrown and the program may terminate. You may type query into IDE to find the query that caused the error.
+If an unexpected error occurs, an exception may be thrown and the program may terminate. You may type query into IDLE Shell to find the query that caused the error.
 ## Assumptions & Interpretations
 * 'Alphabetical order' for sorting names is interpreted as ASCII order. Lower-case letters are treated as equivalent to upper-case letters (using the ASCII values of the upper-case letters).
 * It is assumed that no one is named -.
