@@ -12,10 +12,10 @@ priority = [0.25, 0.125, 0.125, 0.5]
 # some test cases before the fuzzing
 # empty string to test for AC5
 # ', ", \ are special characters, used test if they escape these characters
-# - is used to denote a blank entry; {space}, 0, - and null are tested to see if they have any special meaning
+# - is used to denote a blank entry; {space}, 0, 1, - and null are tested to see if they have any special meaning
 # '-' * 127 is unlikely to match anything; this is used to guarantee testing AC6, though fuzzer is likely to generate queries that match nothing too
 # non-printable characters are also tested
-standard = ['i'+chr(0)+'j', chr(21)*2, chr(31), '-' * 127, ' ', 'null', '0', '-', '\\', '"', "'", '']
+standard = ['i'+chr(0)+'j', chr(21)*2, chr(31), '-' * 127, ' ', 'null', '1', '0', '-', '\\', '"', "'", '']
 
 # keeps a count of which types it has tried to generate for
 # tries to generate for all types
