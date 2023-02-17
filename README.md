@@ -30,7 +30,7 @@ If an unexpected error occurs, an exception may be thrown and the program may te
 * Exact searches are assumed to be case sensitive.
 * Partial searches are interpreted to be case-insensitive searches where the query is a continuous substring of the result.
 * NRICs need not follow the checksum used in Singapore (many entries did not), and phone numbers may not be from Singapore (so there isn't a fixed format). However, phone numbers are strictly numerical.
-* People with different names can share the the same NRICs/ phone numbers / emails. In fact, this is observed in the dataset.
+* People with different names can share the the same NRICs/ phone numbers/ emails. In fact, this is observed in the dataset.
 * The local part of email addresses only contain numbers, upper- or lower-case letters, and any of the following characters !#$%&'*+-/=?^_`{|}~. Dots cannot appear consecutively.
 * The domain of an email can only contain numbers, upper- or lower-case letters, hyphens, and dots. Dots cannot appear consecutively.
 * The search bar automatically removes non-printable characters, and lone spaces. It is assumed that this is a feature, not a bug.
